@@ -2,9 +2,9 @@
 Easy install/update script for [Firefox Nightly](https://github.com/mozilla)  
 
 ## Install  
-`wget https://raw.githubusercontent.com/Tvax/firefoxNightly-install-update/master/install-update-FirefoxNightly.sh`  
-`chmod 755 install-update-FirefoxNightly.sh`  
-`./install-update-FirefoxNightly.sh`  
+`wget https://raw.githubusercontent.com/Tvax/firefoxNightly-install-update/master/install-update-FirefoxNightly.sh;`  
+`chmod 755 install-update-FirefoxNightly.sh;`  
+`./install-update-FirefoxNightly.sh;`  
 
 ## Add to Gnome  
 `sudo echo "[Desktop Entry]
