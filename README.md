@@ -22,3 +22,8 @@ Categories=Network;WebBrowser;
 MimeType=text/html;text/xml;application/xhtml+xml;application/xml;application/v$
 StartupWMClass=Iceweasel
 StartupNotify=true" > /usr/share/applications/firefox.desktop;`  
+
+## Add to Cron
+Execute the script daily :  
+`sudo wget -O /etc/cron.daily/install-update-FirefoxNightly.sh https://raw.githubusercontent.com/Tvax/firefoxNightly-install-update/master/install-update-FirefoxNightly.sh;`  
+`sudo chmod 755 /etc/cron.daily/install-update-FirefoxNightly.sh;`  
