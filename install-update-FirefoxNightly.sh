@@ -10,7 +10,7 @@ clear;
 echo "Closing Firefox !";
 sleep 10;
 echo "Copying Firefox from /tmp to /opt !";
-sudo cp -r /tmp/firefox-nightly/ /opt/;
+sudo cp -r --verbose /tmp/firefox-nightly/ /opt/;
 
 echo "And you're done !"
 BLUE=`tput setaf 4`
