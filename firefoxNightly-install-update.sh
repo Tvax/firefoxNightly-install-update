@@ -2,7 +2,12 @@
 clear;
 echo "Close Firefox !";
 rm -r /tmp/firefox*;
-wget -O /tmp/firefox.tar.bz2 "https://download.mozilla.org/?product=firefox-nightly-latest-ssl&os=linux&lang=en-US";
+arch=`uname -m`
+case $arch in
+    "x86_64") wget -O /tmp/firefox.tar.bz2 "https://download.mozilla.org/?product=firefox-nightly-latest-ssl&os=linux64&lang=en-US";;
+    "i686") wget -O /tmp/firefox.tar.bz2 "https://download.mozilla.org/?product=firefox-nightly-latest-ssl&os=linux&lang=en-US";;
+    *)  echo "Sorry, no firefox build available for $arch"; exit;;
+esac
 tar -xjvf /tmp/firefox* -C /tmp/;
 mv /tmp/firefox/ /tmp/firefox-nightly/;
 killall -9 firefox;
