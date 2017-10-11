@@ -1,6 +1,7 @@
 #!/bin/sh
 clear;
-echo "Close Firefox !";
+echo "Closing Firefox !";
+killall -9 firefox;
 rm -r /tmp/firefox*;
 arch=`uname -m`
 case $arch in
@@ -10,10 +11,7 @@ case $arch in
 esac
 tar -xjvf /tmp/firefox* -C /tmp/;
 mv /tmp/firefox/ /tmp/firefox-nightly/;
-killall -9 firefox;
 clear;
-echo "Closing Firefox !";
-sleep 10;
 echo "Copying Firefox from /tmp to /opt !";
 sudo cp -r --verbose /tmp/firefox-nightly/ /opt/;
 
