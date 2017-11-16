@@ -20,5 +20,3 @@ BLUE=`tput setaf 4`
 echo "Thanks for using this script"
 echo "If you have any issues hit me up here :"
 echo "https://github.com/Tvax/firefoxNightly-install-update/issues"
-echo "Follow me !"
-echo "${BLUE}https://mstdn.io/@Tvax_x"
